@@ -6,16 +6,35 @@
 }
 
 
+/******* navbar ********/
 .nav-link{
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: rgb(61, 61, 61);
-  padding-top: 10px;
-  padding-bottom:10px;
+  padding-top: 15px;
+  padding-bottom:15px;
 }
 
 .link{
   text-decoration: none;
+  color: white;
+}
+
+.btn-container{
+  display: flex;
+ column-gap: 10px;
+}
+
+.btn{
+  border: none;
+  font-size: 18px;
+  transition: 0.25s;
+  padding:2px 8px;
+  border-radius: 0.2rem;
+}
+
+.active-btn{
+  background-color: black;
   color: white;
 }

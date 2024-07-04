@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 
 import { Css, HomeLayout, Html, JavaScript, React } from "./pages"
-
+import { AppProvider } from "./Context"
 
 
 function App() {
@@ -32,10 +32,9 @@ function App() {
   ])
 
   return (
-    <>
-  
+   
      <RouterProvider router={router}/>
-    </>
+
   )
 }
 
