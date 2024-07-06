@@ -11,13 +11,16 @@ const React = () => {
   <article className="btn-container">
   <ReactBtn/>
   </article>
-
+   
   <article className="content-container">
 
   {display.map((text)=> {
   return(
       <div key={text.id}>
-        <p>ANSWER : {text.studyMaterial}</p>
+        <p>QUESTION :<br/><br/> {text.question}</p>
+        <p>ANSWER : <br/><br/>{text.studyMaterial}</p>
+        <br/>
+        <p>Example: <br/><br/>{text.example}</p>
         <img className="image" src= {text.img} />
 
         <video className="video" width="320" height="240" controls>

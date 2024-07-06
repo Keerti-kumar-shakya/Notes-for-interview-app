@@ -45,11 +45,12 @@ h1{
 
 .btn{
   border: none;
-  font-size: 18px;
+  font-size: 16px;
   transition: 0.25s;
   padding:2px 8px;
   border-radius: 0.2rem;
   text-transform: uppercase;
+  background-color: lightblue;
 }
 
 .active-btn{
