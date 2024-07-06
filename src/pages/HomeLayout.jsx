@@ -9,12 +9,16 @@ const HomeLayout = () => {
   const isPageLoading = navigation.state === 'loading';
 
   return (
-   <>
+   <main className="home-layout">
    <Navbar/>
 
+  <section className="outlet-container">
+
    {isPageLoading? <Loading/> :  <Outlet/>}
+
+  </section>
   
-   </>
+   </main>
   )
 }
 

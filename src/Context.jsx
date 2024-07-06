@@ -2,9 +2,17 @@ import { createContext, useContext, useState } from "react";
 import { html } from "./Data/htmlData";
 import { css } from "./Data/CssData";
 import {javascript} from './Data/JavaScriptData';
-import {react} from './Data/ReactData'
+import {react} from './Data/ReactData';
+import img_icon from './assets/icon.jpg'
 
 const AppContext = createContext();
+
+const initialDataSend = [{id: 0,
+  topic: 'intail-btn', 
+  studyMaterial: 'click question button to start learning',
+  img: img_icon,
+  video: 'NA'
+}]
 
 export const AppProvider = ({children}) => {
   const [htmlFinalData, setHtmlFinalData] = useState(null);
@@ -48,7 +56,8 @@ export const AppProvider = ({children}) => {
       {htmlFinalData, htmlDataHandle,
       cssFinalData, cssDataHandle,
       javaScriptFinalData, javascriptDataHandle,
-      reactFinalData, reactDataHandle   
+      reactFinalData, reactDataHandle,
+      initialDataSend   
       }
     }
     >

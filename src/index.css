@@ -6,6 +6,22 @@
 }
 
 
+.home-layout{
+  
+}
+
+.outlet-container{
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+
 /******* navbar ********/
 .nav-link{
   display: flex;
@@ -24,6 +40,7 @@
 .btn-container{
   display: flex;
  column-gap: 10px;
+ margin-top: 30px;
 }
 
 .btn{
@@ -32,9 +49,26 @@
   transition: 0.25s;
   padding:2px 8px;
   border-radius: 0.2rem;
+  text-transform: uppercase;
 }
 
 .active-btn{
   background-color: black;
   color: white;
+}
+
+.content-container{
+  margin-top: 30px;
+  font-size: 20px;
+  letter-spacing: 0.3px;  
+}
+
+.image{
+  margin-top: 30px;
+  width: 600px;
+}
+
+.video {
+  margin-top: 40px;
+  margin-left: 40px;
 }
