@@ -20,4 +20,4 @@ const JavaScriptBtn = () => {
   )
 }
 
-export default JavaScriptBtn
+export default JavaScriptBtn;

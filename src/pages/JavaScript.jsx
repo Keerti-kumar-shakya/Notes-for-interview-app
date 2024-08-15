@@ -17,16 +17,14 @@ const JavaScript = () => {
 
   {display.map((text)=> {
   return(
-      <div key={text.id}>
-        <p>QUESTION :<br/><br/> {text.question}</p>
-        <p>ANSWER : <br/><br/>{text.studyMaterial}</p>
-        <br/>
-        <p>Example: <br/><br/>{text.example}</p>
+    <div key={text.id}>
+        <p className="question"><b>QUESTION :</b> {text.question}</p>
+        <p className="answer"> <b>ANSWER :</b> {text.studyMaterial}</p>
+        <label>Video example: <a href={text.video} target="_blank">Link</a></label>
+        <p className="example"> <b>Example:</b> {text.example}</p>
         <img className="image" src= {text.img} />
 
-        <video className="video" width="320" height="240" controls>
-        <source src={text.video}/>
-        </video>
+      
       </div>
       )
     })} 

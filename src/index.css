@@ -39,7 +39,8 @@ h1{
 
 .btn-container{
   display: flex;
- column-gap: 10px;
+  flex-wrap: wrap;
+ gap: 10px;
  margin-top: 30px;
 }
 
@@ -59,6 +60,7 @@ h1{
 }
 
 .content-container{
+  border: 1px solid black;
   margin-top: 30px;
   font-size: 20px;
   letter-spacing: 0.3px;  
@@ -72,4 +74,19 @@ h1{
 .video {
   margin-top: 40px;
   margin-left: 40px;
+}
+
+.question{
+  border: 1px solid black;
+  margin-bottom: 20px;
+  
+}
+
+.answer{
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.example{
+  
 }
